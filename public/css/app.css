@@ -1,5 +1,171 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
+@media screen and (min-width: 900px) {
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.columns-is-dark {
+  background-color: #363740;
+}
+
+.columns-is-light {
+  background-color: white;
+}
+
+.auth {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .auth {
+    width: 500px;
+  }
+}
+.auth-is-dark {
+  color: #fff;
+}
+
+.auth-wrap {
+  max-width: 440px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.upravdom-logo {
+  margin-bottom: 8px;
+}
+
+.auth-title {
+  margin-bottom: 15px;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 560px) {
+  .auth-title {
+    line-height: 33px;
+  }
+}
+.auth-title__title {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 560px) {
+  .auth-title__title {
+    font-size: 30px;
+  }
+}
+.auth-title__subtitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+@media screen and (min-width: 560px) {
+  .auth-title__subtitle {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+.auth-form {
+  margin-bottom: 22px;
+  padding-top: 5px;
+}
+
+.auth-form__item {
+  margin-bottom: 12px;
+}
+
+.auth-form__item input {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin: 0;
+  text-indent: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+}
+
+.auth-remind {
+  padding: 10px 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.auth-remind a {
+  text-decoration: none;
+  color: #B78B5C;
+}
+
+.image {
+  display: none;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .image {
+    display: block;
+  }
+}
+.image-is-auth {
+  background-image: url("https://meduza.io/image/attachments/images/000/039/623/original/JaxtKWWOjxOo6KDHux25Qg.jpg");
+}
+
+.image-is-login {
+  background-image: url("https://meduza.io/image/attachments/images/000/039/624/original/0-jdr7PQ3mrgljFKxioc5g.jpg");
+}
+
+.button-auth {
+  min-width: 150px;
+  height: 42px;
+  margin: 0;
+  padding: 0 12px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #5f636b;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 560px) {
+  .button-auth {
+    font-size: 18px;
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
