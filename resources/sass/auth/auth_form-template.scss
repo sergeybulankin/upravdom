@@ -1,0 +1,60 @@
+.columns-is-dark {
+    background-color: rgb(41, 44, 50);
+    .auth {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.60);
+        flex-shrink: 0;
+        flex-grow: 0;
+        align-items: center;
+        justify-content: center;
+        .upravdom-logo {
+            margin-bottom: 8px;
+        }
+    }
+    .auth-is-dark {
+        color: #fff;
+    }
+}
+@media screen and (min-width: 900px) {
+    .auth {
+        width: 500px;
+    }
+}
+.auth-wrap {
+    max-width: 440px;
+    cursor: default;
+    user-select: none;
+    text-align: center;
+    margin-top: -40px;
+}
+.columns-is-light{
+    background-color: rgba(255, 255, 255, 1);
+}
+@media screen and (min-width: 900px) {
+    .columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+.image {
+    display: none;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    flex-grow: 1;
+}
+@media screen and (min-width: 900px) {
+    .image {
+        display: block;
+    }
+}
+.image-is-auth {
+    background-image: url('https://i1.wp.com/www.arts-dnevnik.ru/wp-content/uploads/2020/10/0854D3E4-FF25-4DD5-9310-D4DA2EF4063D.jpeg?fit=1280%2C813&ssl=1');
+}
+.image-is-login {
+    background-image: url('https://artchallenge.me/painters/17/29.jpg');
+}

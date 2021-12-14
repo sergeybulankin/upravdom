@@ -3,8 +3,9 @@
 
 // Variables
 @import 'variables';
-@import 'auth/template';
-@import 'auth/form';
+@import "auth/auth_form-template";
+@import "auth/auth_form-title";
+@import "auth/auth_form-body";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

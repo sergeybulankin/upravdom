@@ -14,7 +14,7 @@
                 <form method="GET"  action="{{ route('login') }}">
                     <div class="auth-form__item">
                         <label for="phone">
-                            <input type="text" name="phone" id="phone" placeholder="Ваш номер телефона">
+                            <input type="text" name="phone" id="phone" placeholder="Номер телефона">
                         </label>
                     </div>
 
