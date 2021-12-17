@@ -1,0 +1,30 @@
+nav {
+    margin: 0 25% 0 25%;
+    width: 50%;
+    ul {
+        font-size: 0.9rem;
+        font-weight: 900;
+        color: $base-navigation-color;
+        li {
+            margin: 10px 0;
+            a {
+                color: $base-navigation-color;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: $base-navigation-color;
+                }
+            }
+            span {
+                margin: 0 $ml_r;
+                padding: 2px 3px;
+                background-color: red;
+                text-align: center;
+                font-size: 0.7rem;
+                font-weight: 900;
+                border-radius: 50%;
+                color: $base-color;
+            }
+        }
+    }
+}

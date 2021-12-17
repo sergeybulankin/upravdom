@@ -1,0 +1,18 @@
+.navigation {
+    background-color: $base-navigation-background;
+    height: 100vh;
+    color: $base-navigation-color;
+    .navigation-logotype {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: $mt_b 0;
+        img {
+            width: 40px;
+            box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.15);
+        }
+        .navigation-logotype__information {
+            margin: 0 $ml_r;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .columns-is-dark {
-    background-color: rgb(41, 44, 50);
+    background-color: $base-color;
     .auth {
         position: relative;
         display: flex;
@@ -11,10 +11,13 @@
         justify-content: center;
         .upravdom-logo {
             margin-bottom: 8px;
+            img {
+                width: 250px;
+            }
         }
     }
     .auth-is-dark {
-        color: #fff;
+        color: $second-color;
     }
 }
 @media screen and (min-width: 900px) {

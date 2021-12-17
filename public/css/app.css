@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
 @charset "UTF-8";
+h1, .h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem !important;
+  font-weight: 700;
+  color: #6A707C;
+}
+
 .columns-is-dark {
-  background-color: #292c32;
+  background-color: #f9f8f9;
 }
 .columns-is-dark .auth {
   position: relative;
@@ -16,8 +24,11 @@
 .columns-is-dark .auth .upravdom-logo {
   margin-bottom: 8px;
 }
+.columns-is-dark .auth .upravdom-logo img {
+  width: 250px;
+}
 .columns-is-dark .auth-is-dark {
-  color: #fff;
+  color: #0d3b66;
 }
 
 @media screen and (min-width: 900px) {
@@ -118,12 +129,15 @@
   height: 42px;
   margin: 0;
   text-indent: 11px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #0d3b66;
   border-radius: 4px;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 600;
   outline: none;
+}
+.auth-form__item input::-webkit-input-placeholder {
+  color: #0d3b66;
 }
 
 .auth-remind {
@@ -135,7 +149,7 @@
 }
 .auth-remind a {
   text-decoration: none;
-  color: #B78B5C;
+  color: #0d3b66;
 }
 
 .button-auth {
@@ -148,7 +162,7 @@
   color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background: #5f636b;
+  background: #0d3b66;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -157,6 +171,67 @@
   .button-auth .button-auth {
     font-size: 18px;
   }
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 15px;
+}
+header input[type=text] {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid #f9f8f9;
+  outline: none;
+}
+
+.navigation {
+  background-color: #363740;
+  height: 100vh;
+  color: #6A707C;
+}
+.navigation .navigation-logotype {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.navigation .navigation-logotype img {
+  width: 40px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.15);
+}
+.navigation .navigation-logotype .navigation-logotype__information {
+  margin: 0 15px;
+}
+
+nav {
+  margin: 0 25% 0 25%;
+  width: 50%;
+}
+nav ul {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #6A707C;
+}
+nav ul li {
+  margin: 10px 0;
+}
+nav ul li a {
+  color: #6A707C;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #6A707C;
+}
+nav ul li span {
+  margin: 0 15px;
+  padding: 2px 3px;
+  background-color: red;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  border-radius: 50%;
+  color: #f9f8f9;
 }
 
 /*!
@@ -11444,4 +11519,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.wrapper {
+  margin: 0;
+  padding: 0;
 }

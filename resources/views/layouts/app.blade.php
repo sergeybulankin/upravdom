@@ -11,6 +11,12 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script>
+    window.Laravel = {!! json_encode([
+       'csrfToken' => csrf_token(),
+       'apiToken' => Auth::user()->api_token ?? null,
+    ]) !!};
+    </script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

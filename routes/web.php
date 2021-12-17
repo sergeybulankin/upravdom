@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('login')->middleware('guest');
-
 Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->middleware('guest');
+Route::get('/logout', [\App\Http\Controllers\LogoutController::class, '__construct']);
+Route::get('/home', [\App\Http\Controllers\HomeController::class, 'show'])->name('home')->middleware('auth');
