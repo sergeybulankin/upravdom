@@ -1,6 +1,6 @@
 .navigation {
     background-color: $base-navigation-background;
-    height: 100vh;
+    min-height: 100vh;
     color: $base-navigation-color;
     .navigation-logotype {
         display: flex;

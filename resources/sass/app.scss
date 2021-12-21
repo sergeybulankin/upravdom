@@ -12,6 +12,8 @@
 
 // Dashboard
 @import "dashboard/base";
+@import "dashboard/dashboard-wrapper";
+@import "dashboard/dashboard-task";
 
 // Header
 @import "header/base";
@@ -22,6 +24,7 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
 
 .wrapper {
     margin: 0;
