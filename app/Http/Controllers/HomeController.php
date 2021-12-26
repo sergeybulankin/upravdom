@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -31,6 +32,8 @@ class HomeController extends Controller
      */
     public function show()
     {
+        $role = User::find(1)->role;
+        dd($role);
         return view('index');
     }
 }
