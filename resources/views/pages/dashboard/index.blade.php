@@ -6,7 +6,7 @@
         <span class="add-task">Добавить задачу</span>
     </h1>
 
-    <div class="col-8 dashboard-wrapper__tasks">
+    <div class="col-md-8 col-sm-12 dashboard-wrapper__tasks">
         <h2>Открытые задачи</h2>
         <div class="col-12 dashboard-wrapper__task">
             <div class="dashboard-wrapper__information">
@@ -25,8 +25,8 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
             </div>
-            <div class="col-12 dashboard-task__worker">
-                <div class="col-8 dashboard-task__worker-responsible">
+            <div class="row col-md-12 col-sm-12 dashboard-task__worker">
+                <div class="col-md-8 col-sm-12 dashboard-task__worker-responsible">
                     <div>
                         <i class="bi bi-person-circle"></i>
                     </div>
@@ -34,7 +34,7 @@
                         Иванов Иван | <span class="request">Заявка #54</span>
                     </div>
                 </div>
-                <div class="col-4 dashboard-task__worker-status">
+                <div class="col-md-4 col-sm-12 dashboard-task__worker-status">
                     <div class="col-12 status-in-work waiting">
                         В работе <br>
                         <span>
@@ -63,8 +63,8 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
             </div>
-            <div class="col-12 dashboard-task__worker">
-                <div class="col-8 dashboard-task__worker-responsible">
+            <div class="row col-md-12 col-sm-12 dashboard-task__worker">
+                <div class="col-md-8 col-sm-12 dashboard-task__worker-responsible">
                     <div>
                         <i class="bi bi-person-circle"></i>
                     </div>
@@ -72,7 +72,7 @@
                         Ибрагимов Олег | <span class="request">Заявка #27</span>
                     </div>
                 </div>
-                <div class="col-4 dashboard-task__worker-status">
+                <div class="col-md-4 col-sm-12 dashboard-task__worker-status">
                     <div class="col-12 status-in-work fatal">
                         Провалено <br>
                         <span>

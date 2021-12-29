@@ -4,7 +4,7 @@
     <div class="row container-fluid wrapper">
         @include('navigation.wrapper')
 
-        <div class="col-10 dashboard">
+        <div class="col-md-10 col-sm-12 dashboard">
             @include('navigation.header.wrapper')
 
             <div class="col-12 dashboard-wrapper">
