@@ -17,6 +17,7 @@
        'apiToken' => Auth::user()->api_token ?? null,
     ]) !!};
     </script>
+    <script src="https://unpkg.com/imask"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,5 +26,13 @@
     <div id="app">
         @yield('content')
     </div>
+
+    <script>
+        var element = document.getElementById('phone');
+        var maskOptions = {
+            mask: '+{7}(000)-000-00-00'
+        };
+        var mask = IMask(element, maskOptions);
+    </script>
 </body>
 </html>

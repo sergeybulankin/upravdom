@@ -208,6 +208,16 @@ h2, .h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+.dashboard-wrapper .add-task a {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100 !important;
+  color: white;
+  text-decoration: none;
+}
+.dashboard-wrapper .add-task a:hover {
+  text-decoration: none;
+}
 .dashboard-wrapper .add-task:hover {
   background: linear-gradient(#0863ac, #2096F4);
 }
@@ -378,6 +388,11 @@ header input[type=text] {
   min-height: 100vh;
   color: #6A707C;
 }
+@media screen and (min-width: 800px) {
+  .navigation .collapse:not(.show) {
+    display: block;
+  }
+}
 @media screen and (max-width: 800px) {
   .navigation {
     min-height: 10vh;
@@ -437,6 +452,16 @@ nav ul {
   font-weight: 900;
   color: #6A707C;
 }
+@media screen and (max-width: 560px) {
+  nav ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    text-align: center;
+  }
+}
 nav ul li {
   margin: 10px 0;
 }
@@ -457,6 +482,16 @@ nav ul li span {
   font-weight: 900;
   border-radius: 50%;
   color: #f9f8f9;
+}
+@media screen and (max-width: 800px) {
+  nav ul li span {
+    display: none;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav ul li span {
+    display: none;
+  }
 }
 
 /*!

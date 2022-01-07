@@ -22,4 +22,9 @@
         </a>
         <span>15</span>
     </li>
+    <li>
+        <a href="{{route('logout')}}">
+            Выйти
+        </a>
+    </li>
 </ul>

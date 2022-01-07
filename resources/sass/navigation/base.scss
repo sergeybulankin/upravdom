@@ -2,6 +2,11 @@
     background-color: $base-navigation-background;
     min-height: 100vh;
     color: $base-navigation-color;
+    @media screen and (min-width: 800px) {
+        .collapse:not(.show) {
+            display: block;
+        }
+    }
     @media screen and (max-width: 800px) {
         min-height: 10vh;
         nav {

@@ -23,4 +23,12 @@ class UserController extends Controller
         $users = User::all();
         return view('pages.administrator.users.index', compact('users'));
     }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function create()
+    {
+        return view('pages.administrator.users.create');
+    }
 }

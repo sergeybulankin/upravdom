@@ -18,7 +18,7 @@ class UserControllerPolicy
      */
     public function __construct()
     {
-        $this->role = RoleUser::select('role_id')->find(\Auth::user())->first();
+        $this->role = RoleUser::select('role_id')->where('user_id', \Auth::user()->id)->first();
     }
 
     /**

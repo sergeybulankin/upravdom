@@ -11,6 +11,11 @@ class RoleUser extends Model
 
     protected $table = 'roles_users';
 
+    protected $fillable = [
+        'user_id',
+        'role_id'
+    ];
+
     /**
      * @return mixed
      */
