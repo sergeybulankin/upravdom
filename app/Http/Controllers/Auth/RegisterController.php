@@ -37,6 +37,7 @@ class RegisterController extends Controller
     /**
      * Create a new controller instance.
      *
+     *
      * @return void
      */
     public function __construct()
@@ -83,7 +84,7 @@ class RegisterController extends Controller
 
         $user->save();
 
-        $this->createRoleUser($user->id);
+        $this->createRoleUser($user->id, $data['role']);
 
         return redirect()->route('show-users');
     }
@@ -92,11 +93,11 @@ class RegisterController extends Controller
      * @param $user_id
      * @return mixed
      */
-    protected function createRoleUser($user_id)
+    protected function createRoleUser($user_id, $role)
     {
         return RoleUser::create([
             'user_id' => $user_id,
-            'role_id' => 1
+            'role_id' => $role
         ]);
     }
 }
