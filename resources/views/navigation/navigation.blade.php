@@ -15,6 +15,16 @@
                 Уровни доступа
             </a>
         </li>
+        <li>
+            <a href="{{route('show-type-of-repair')}}">
+                Типы ремонта
+            </a>
+        </li>
+        <li>
+            <a href="{{route('show-type-of-work')}}">
+                Виды работ
+            </a>
+        </li>
     @endcan
     <li>
         <a href="">

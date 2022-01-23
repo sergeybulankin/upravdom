@@ -66,8 +66,6 @@ class UserController extends Controller
 
         if ($user_role->role_id != $role) $user_role->role_id = $role;
 
-
-
         $user->save();
         $user_role->save();
 
