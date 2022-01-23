@@ -1,8 +1,33 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 // Variables
 @import 'variables';
 
+// Auth forms
+@import "auth/auth_form-template";
+@import "auth/auth_form-title";
+@import "auth/auth_form-body";
+
+// Dashboard
+@import "dashboard/base";
+@import "dashboard/dashboard-wrapper";
+@import "dashboard/dashboard-task";
+
+// Header
+@import "header/base";
+@import "header/search";
+
+// Navigation block
+@import "navigation/base";
+@import "navigation/navigation_block";
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}

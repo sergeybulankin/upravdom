@@ -5,3 +5,30 @@ $body-bg: #f8fafc;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+// Typography titles
+$font-title: 'Montserrat', sans-serif;
+
+// Color
+$base-color: #f9f8f9;
+$second-color: #0d3b66;
+$base-navigation-background: #363740;
+$base-navigation-color: #6A707C;
+
+// Margin
+$mt_b: 20px;
+$ml_r: 15px;
+
+h1 {
+    font-family: $font-title;
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    color: $base-navigation-color;
+}
+
+h2 {
+    font-family: $font-title;
+    font-size: 1.3rem !important;
+    font-weight: 700;
+    color: #000;
+}

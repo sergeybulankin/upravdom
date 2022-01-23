@@ -1,0 +1,11 @@
+header {
+    background-color: #fff;
+    margin: 0 !important;
+    padding: $mt_b $ml_r;
+    input[type="text"] {
+        width: 100%;
+        padding: 8px $ml_r;
+        border: 1px solid $base-color;
+        outline: none;
+    }
+}

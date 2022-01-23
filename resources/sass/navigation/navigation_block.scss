@@ -1,0 +1,42 @@
+nav {
+    margin: 0 10% 0 10%;
+    width: 80%;
+    ul {
+        font-size: 0.9rem;
+        font-weight: 900;
+        color: $base-navigation-color;
+        @media screen and (max-width: 560px){
+            text-align: center;
+        }
+        @media screen and (max-width: 800px) {
+            text-align: center;
+        }
+        li {
+            margin: 10px 0;
+            a {
+                color: $base-navigation-color;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: $base-navigation-color;
+                }
+            }
+            span {
+                margin: 0 $ml_r;
+                padding: 2px 3px;
+                background-color: red;
+                text-align: center;
+                font-size: 0.7rem;
+                font-weight: 900;
+                border-radius: 50%;
+                color: $base-color;
+                @media screen and (max-width: 800px) {
+                    display: none;
+                }
+                @media screen and (max-width: 560px){
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.dashboard-wrapper {
+    margin: $mt_b 0;
+    padding: 25px;
+    background-color: #fff;
+    .dashboard-wrapper__tasks {
+        margin: 25px 0 15px 0;
+        .dashboard-wrapper__tasks_success {
+            margin: 55px 0;
+        }
+    }
+    .add-task {
+        margin: 0 0 0 5px;
+        padding: 8px 15px;
+        background: linear-gradient(#2096F4, #0863ac);
+        color: #fff;
+        font-family: $font-family-sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100 !important;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        a {
+            font-family: $font-family-sans-serif;
+            font-size: 0.8rem;
+            font-weight: 100 !important;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &:hover {
+            background: linear-gradient(#0863ac, #2096F4);
+        }
+        @media screen and (max-width: 560px){
+            display: block;
+            margin: $mt_b 0;
+        }
+    }
+}

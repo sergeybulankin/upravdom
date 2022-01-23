@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\RoleUser;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -34,11 +37,12 @@ class RegisterController extends Controller
     /**
      * Create a new controller instance.
      *
+     *
      * @return void
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
 
     /**
@@ -51,7 +55,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'phone' => ['required', 'string', 'phone', 'max:18', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -62,12 +66,38 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function create(Request $data)
     {
+        /*
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+        ]);*/
+
+        $user = User::create([
+            'name' => $data['name'],
+            'phone' => $data['phone'],
+            'password' => Hash::make($data['password']),
+            'api_token' => Str::random(60)
+        ]);
+
+        $user->save();
+
+        $this->createRoleUser($user->id, $data['role']);
+
+        return redirect()->route('show-users');
+    }
+
+    /**
+     * @param $user_id
+     * @return mixed
+     */
+    protected function createRoleUser($user_id, $role)
+    {
+        return RoleUser::create([
+            'user_id' => $user_id,
+            'role_id' => $role
         ]);
     }
 }
